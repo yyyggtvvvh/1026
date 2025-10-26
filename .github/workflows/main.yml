@@ -3,7 +3,7 @@ name: Run tmux 1026
 on:
   schedule:
     - cron: '3 5 */2 * *' # 
-
+  workflow_dispatch:  # 允许手动触发
 jobs:
   run-sessions:
     runs-on: ubuntu-latest
